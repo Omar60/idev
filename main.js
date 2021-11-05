@@ -1,7 +1,6 @@
 /* Moralis init code */
 const serverUrl = "https://kupkethwblgf.usemoralis.com:2053/server";
 const appId = "YpYvIbs7kp82Zl7zdKwVB4RUJl06nfGDEggQ0cwiF";
-const balance = await Moralis.Web3API.account.getNativeBalance();
 Moralis.start({ serverUrl, appId });
 
 /* TODO: Codigo de auntentificacion de cuenta y salida*/
@@ -25,5 +24,3 @@ async function logOut() {
 }
 document.getElementById("btn-login").onclick = login;
 document.getElementById("btn-logout").onclick = logOut;
-
-/* Obttener balance nativo */
