@@ -7,7 +7,7 @@ async function getBalance() {
     address: "0x67422A4b99D5a22094e54D4e7Ba2Da36431d5C50",
   });
   console.log(balance);
-  let ethBalance = balance.ethBalance + " BNB";
-  document.getElementById("balance").innerHTML = balance;
+  let ethBalance = balance.balance + " BNB"
+  document.getElementById("balance").innerHTML = ethBalance;
 }
 getBalance();
